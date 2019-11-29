@@ -26,6 +26,8 @@ spec:
           value: admin
         - name: JHIPSTER_REGISTRY_PASSWORD
           value: admin
+        - name: JHIPSTER_SECURITY_AUTHENTICATION_JWT_SECRET
+          value: my-secret-key-which-should-be-changed-in-production-and-be-base64-encoded 
         - name: SPRING_CLOUD_CONFIG_SERVER_COMPOSITE_0_TYPE
           value: native
         - name: SPRING_CLOUD_CONFIG_SERVER_COMPOSITE_0_SEARCH_LOCATIONS
