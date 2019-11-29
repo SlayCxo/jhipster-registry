@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: jhipster-registry
+  labels:
+    app: jhipster-registry
+  annotations:
+spec:
+  rules:
+    - host: a0121c80217964b0a82f9edc9d7af172-1275089881.us-west-2.elb.amazonaws.com
+      http:
+        paths:
+          - path: /jhipster-registry
+            backend:
+              serviceName: jhipster-registry
+              servicePort: 8761
